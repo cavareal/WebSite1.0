@@ -23,10 +23,12 @@ h1{
     font-size: 3.5em;
     color : #a5b4fc;
     font-family: 'Montserrat', sans-serif;
+    display : flex;
+    justify-content: left;
 }
 
 h2{
-    font-size: 2.5em;
+    /*font-size: 2.5em;*/
     font-family: 'Montserrat', sans-serif;
     color : #a5b4fc;
 }
@@ -61,6 +63,10 @@ a:hover{
     text-decoration : none;
 }
 
+.lien-icone{
+    margin-left: 30px;
+}
+
 .lien-icone :hover{
     opacity : 0.5;
 }
@@ -86,4 +92,44 @@ section{
 .a-propos-main{
     width: 50%;
     margin : auto;
+}
+
+
+footer, 
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a{
+    margin-left: 30px;
+}
+
+.accueil-photos{
+    background-color: white;
+    padding: 80px;
+}
+
+.accueil-photos h2 {
+    color :#242424; 
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.accueil-photos div {
+    display : flex;
+    flex-direction: row;
+    gap : 15px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.accueil-intro{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+    margin: auto;
 }
