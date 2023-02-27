@@ -1,0 +1,60 @@
+.carreApropos{
+    border-right: 2px solid #8e86b5 ;
+    border-bottom: 2px solid #8e86b5 ;
+    margin-bottom: 80px;
+    padding : 50px;
+}
+
+
+.carreApropos h2{
+    margin-top: 30px;
+}
+
+.carreApropos ul{
+    margin-top : 30px;
+}
+
+.carreApropos + div {
+    text-align: center;
+}
+
+.a-propos-main{
+    width: 50%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin : auto;
+}
+
+.a-propos-main h1 {
+    padding-top: 40px;
+}
+
+.grid-photos-de-moi img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-photos-de-moi {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px;
+    grid-template-rows: 150px 150px;
+    gap : 15px;
+    justify-content: center;
+}
+
+table{
+    border-collapse: collapse;
+    color : white;
+    margin : auto;
+}
+
+td, th{
+    border : 1px solid #8e86b5;
+    padding: 5px 70px;
+}
+
+td {
+    padding: 50px 70px;
+}
+
