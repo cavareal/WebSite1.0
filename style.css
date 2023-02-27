@@ -1,3 +1,7 @@
+* {  /*initialise les marges par défaut du navigateur*/
+    margin: 0;
+}
+
 body {
     font-family: 'Manrope', sans-serif;
     font-size: 1em;
@@ -22,7 +26,7 @@ h1{
 }
 
 h2{
-    font-size: 2.5em;
+    /*font-size: 2.5em;*/
     font-family: 'Montserrat', sans-serif;
     color : #a5b4fc;
 }
@@ -31,19 +35,21 @@ p,
 li{
     font-size: 1.1em;
     color: #f9f8ff;
-
 }
 
-.entete, 
-.pied-de-page{
+header, 
+footer{
     background-color: white;
+    padding : 20px 50px;
 }
 
 
 .cta{
+    display : inline-block;
     background: linear-gradient(90deg, #8E86B5, #ACAEED);
     color : white;
     border-radius: 50px;
+    padding : 20px 30px;
 }
 
 a:hover{
@@ -55,6 +61,10 @@ a:hover{
     text-decoration : none;
 }
 
+.lien-icone{
+    margin-left: 30px;
+}
+
 .lien-icone :hover{
     opacity : 0.5;
 }
@@ -62,4 +72,163 @@ a:hover{
 .carreApropos{
     border-right: 2px solid #8e86b5 ;
     border-bottom: 2px solid #8e86b5 ;
+    margin-bottom: 80px;
+    padding : 50px;
 }
+
+
+.carreApropos h2{
+    margin-top: 30px;
+}
+
+.carreApropos ul{
+    margin-top : 30px;
+}
+
+.carreApropos + div {
+    text-align: center;
+}
+
+
+section{
+    padding: 80px;
+}
+
+.a-propos-main{
+    width: 50%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin : auto;
+}
+
+.a-propos-main h1 {
+    padding-top: 40px;
+}
+
+.grid-photos-de-moi img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-photos-de-moi {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px;
+    grid-template-rows: 150px 150px;
+    gap : 15px;
+    justify-content: center;
+}
+
+footer, 
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a{
+    margin-left: 30px;
+}
+
+.accueil-photos{
+    background-color: white;
+    padding: 80px;
+}
+
+.accueil-photos h2 {
+    color :#242424; 
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.accueil-photos div {
+    display : flex;
+    flex-direction: row;
+    gap : 15px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.accueil-intro{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    align-items: flex-start;
+    margin : auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.accueil-intro h1{
+    margin-bottom: 15px;
+}
+
+.accueil-intro div {
+    padding-right: 80px;
+}
+
+.accueil-intro div p{
+    margin-bottom: 30px;
+}
+
+.titre_portfolio{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.portfolio-section-photos {
+    background-color: white;
+}
+
+.portfolio-section-photos h2 {
+    color: #242424;
+    margin-bottom: 80px;
+    padding-top: 80px;
+}
+
+.grid-paysages img,
+.grid-portraits img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.grid-paysages {
+    display : grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    gap : 15px;
+}
+
+.grid-portraits{
+    display : grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px ;
+    gap : 15px;
+}
+
+.lien-conteneur-photo {
+    position: relative;
+}
+
+.photo-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+.lien-conteneur-photo:hover .photo-hover {
+    display: flex;
+}
+
