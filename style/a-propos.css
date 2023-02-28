@@ -1,10 +1,11 @@
 .carreApropos{
     border-right: 2px solid #8e86b5 ;
     border-bottom: 2px solid #8e86b5 ;
-    margin-bottom: 80px;
+    margin:auto;
     padding : 50px;
+    width: 50%;
+    margin-bottom: 80px;
 }
-
 
 .carreApropos h2{
     margin-top: 30px;
@@ -19,15 +20,13 @@
 }
 
 .a-propos-main{
-    width: 50%;
-    padding-top: 40px;
-    padding-bottom: 40px;
     margin : auto;
 }
 
 .a-propos-main h1 {
     padding-top: 40px;
 }
+
 
 .grid-photos-de-moi img{
     width: 100%;
@@ -44,17 +43,29 @@
 }
 
 table{
+    display : flex;
     border-collapse: collapse;
     color : white;
-    margin : auto;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
 }
 
-td, th{
-    border : 1px solid #8e86b5;
-    padding: 5px 70px;
+td,
+th{
+    border : 1px solid #a5b4fc;
+    padding: 15px;
 }
 
 td {
-    padding: 50px 70px;
+    padding: 80px;
 }
 
+h2 {
+    padding-bottom: 20px;
+}
+
+h1,
+h2 {
+    text-align: center;
+}

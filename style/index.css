@@ -39,3 +39,12 @@
 .accueil-intro div p{
     margin-bottom: 30px;
 }
+
+.section-contact h2 {
+    color: #a5b4fc;
+    text-align: center;
+}
+
+.section-contact {
+    color : white;
+}
