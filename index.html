@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>Accueil - Cavaree Lens Photographie</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
+    <link href="style/index.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
@@ -12,7 +13,7 @@
 <body>
     <header>
         <nav>
-            <img src="images/Mon_logo.png"  alt="Logo de Alice">
+            <img src="images/Mon_logo_avec_nom.png"  alt="Logo de Alice">
             <div>
                 <a href="index.html" >Accueil</a>
                 <a href="a-propos.html" >À propos</a>
@@ -48,6 +49,28 @@
             <div>
             <a href="" class="cta">VOIR MON PORTFOLIO</a>
             </div>
+        </section>
+        <section id="contact" class="section-contact">
+            <h2>Parlons de votre projet</h2>
+            <form method="get" action="">
+                <div class="form-nom-email">
+                    <div class="form-column">
+                        <label for="nom">nom</label>
+                        <input type="text" name="nom" id="nom" >
+                    </div>
+                    <div class="form-column">
+                        <label for="email">email</label>
+                        <input type="email" name="email" id="email" >
+                    </div>
+                </div>
+                <div class="form-column">
+                    <label for="message">message</label>
+                    <textarea name="message" id="message" rows="10"></textarea>
+                </div>
+                <div class="form-cta">
+                    <input type="submit" value="ENVOYER" class="cta" >
+                </div>
+            </form>
         </section>
     </main>
     <footer>
